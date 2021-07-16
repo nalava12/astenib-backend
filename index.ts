@@ -14,7 +14,7 @@ const nanoid = customAlphabet(CUSTOM_CHARACTERS, 5)
 
 // initialize database
 
-const adapter = new JSONFile<Database>('/Users/nalava12/Develop/dev/astenib/backend/db.json')
+const adapter = new JSONFile<Database>('db.json')
 const db = new Low<Database>(adapter)
 
 db.read().then(() => {
